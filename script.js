@@ -1,6 +1,31 @@
 
-let time = 25;      // Sets default time
+// BUTTONS
+const start_btn = document.querySelector('#start')
+const pause_btn = document.querySelector('#pause')
+const reset_btn = document.querySelector('#reset')
+const break_btn = document.querySelector("#break.")
+
+//DISPLAY
+const display = document.querySelector('#display').innerHTML = "Test";
+
+
+
+
+
+
+
+
+
+
+/*
+let time = 1;      // Sets default time
 let display = document.querySelector('#timer'); // sets display
+const start = document.querySelector('#start');
+
+
+
+
+
 
 window.onload = function () {               // loads timer on screen
 display.textContent = time + ":00";
@@ -23,7 +48,7 @@ function startTimer(duration, display) {
         display.textContent = minutes + ":" + seconds;
 
         if (--timer < 0) {
-            timer = duration;
+            startTimer(5, display )
         }
     }, 1000);
 }
@@ -31,10 +56,10 @@ function startTimer(duration, display) {
 
 //
 
-const start = document.querySelector('#start');
-start.addEventListener('click', () => {
+
+/*start.addEventListener('click', () => {
     var Countdown = 60 * time,
     display = document.querySelector('#timer');
 startTimer(Countdown, display);
-});
+}); */
 
